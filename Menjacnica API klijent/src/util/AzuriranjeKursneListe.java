@@ -69,9 +69,9 @@ public class AzuriranjeKursneListe {
 		}
 	}
 	
-	private JsonObject spremiObject(LinkedList<Valuta> vl, GregorianCalendar greg){
+	public JsonObject spremiObject(LinkedList<Valuta> vl, GregorianCalendar greg){
 		String dat = ""+greg.get(GregorianCalendar.DAY_OF_MONTH)+"."
-			    +greg.get(GregorianCalendar.MONTH)+"."+
+			    +(greg.get(GregorianCalendar.MONTH)+1)+"."+
 			    greg.get(GregorianCalendar.YEAR)+".";
 	JsonObject kurseviJson = new JsonObject();
 	kurseviJson.addProperty("datum", dat);
