@@ -14,7 +14,7 @@ import domen.Valuta;
 
 public class JsonRatesAPIKomunikacija {
 	
-	public LinkedList<Valuta> vratiIznosKurseva(String[] valute){
+	public static LinkedList<Valuta> vratiIznosKurseva(String[] valute){
 		URL url;
 		LinkedList<Valuta> val = new LinkedList<Valuta>();
 		try {
